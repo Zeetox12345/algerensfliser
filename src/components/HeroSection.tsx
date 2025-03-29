@@ -35,12 +35,23 @@ const HeroSection = () => {
           {/* Hero image - before and after comparison */}
           <div className="relative">
             <div className="bg-white p-4 rounded-lg shadow-lg">
-              <div className="relative bg-gray-200 rounded">
-                <img 
-                  src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07" 
-                  alt="Rene fliser uden alger" 
-                  className="w-full h-auto rounded"
-                />
+              <div className="relative bg-gray-200 rounded overflow-hidden">
+                <div className="grid grid-cols-2 gap-1">
+                  <div>
+                    <img 
+                      src="/lovable-uploads/cf7db069-ac45-4706-83aa-768e8c5c3fbe.png" 
+                      alt="Fliser med alger (før)" 
+                      className="w-full h-auto"
+                    />
+                  </div>
+                  <div>
+                    <img 
+                      src="/lovable-uploads/d59a99e1-7056-4016-9a76-2ffa1c99eaac.png" 
+                      alt="Rene fliser uden alger (efter)" 
+                      className="w-full h-auto"
+                    />
+                  </div>
+                </div>
                 
                 {/* Before/After label */}
                 <div className="absolute bottom-0 left-0 w-full bg-site-green-400 bg-opacity-90 text-white p-3">
