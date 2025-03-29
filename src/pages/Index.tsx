@@ -7,6 +7,7 @@ import DIYSection from '../components/DIYSection';
 import ServiceSection from '../components/ServiceSection';
 import TestimonialsSection from '../components/TestimonialsSection';
 import FAQSection from '../components/FAQSection';
+import MethodsSection from '../components/MethodsSection';
 import { Helmet } from 'react-helmet-async';
 
 const Index = () => {
@@ -41,6 +42,7 @@ const Index = () => {
         <main className="flex-grow">
           <HeroSection />
           <DIYSection />
+          <MethodsSection />
           <ServiceSection />
           <TestimonialsSection />
           <FAQSection />

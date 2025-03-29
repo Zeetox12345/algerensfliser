@@ -76,6 +76,42 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
+
+        {/* New SEO optimized content section */}
+        <div className="mt-16 bg-white p-8 rounded-lg shadow-md">
+          <h2 className="heading-md mb-4">Hvorfor algerens af fliser er afgørende for din bolig</h2>
+          <p className="mb-4">
+            Har dine fliser udviklet grimme, glatte og klæbrige algebelægninger? Dette er ikke blot et æstetisk problem. Professionel <strong>algerens af fliser</strong> er afgørende for at bevare dit fliseareal i god stand og forhindre kostbare skader.
+          </p>
+          <p className="mb-4">
+            Når alger får lov til at etablere sig på dine <strong>fliser</strong>, holder de på fugt og skaber et ideelt miljø for mos og ukrudt. Rødderne trænger ned mellem fliserne og giver adgang for fugt til gruslaget nedenunder. Dette kan føre til at fliserne bliver ustabile, begynder at vippe eller endda revner ved frostsprængninger om vinteren.
+          </p>
+          <p className="mb-4">
+            Regelmæssig <strong>algerens af fliser</strong> er derfor ikke kun for udseendets skyld – det er en nødvendig vedligeholdelse der forlænger levetiden på dine flisebelægninger betydeligt og sparer dig for dyre reparationer eller udskiftninger.
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+            <div className="bg-site-green-100 p-6 rounded-lg">
+              <h3 className="text-lg font-bold mb-3">Fordele ved professionel algerens af fliser</h3>
+              <ul className="space-y-2">
+                <li>✓ Effektiv fjernelse af selv genstridige alger</li>
+                <li>✓ Specialudstyr og professionelle rensemidler</li>
+                <li>✓ Imprægnering forlænger effekten markant</li>
+                <li>✓ Forebygger skader på flisebelægningen</li>
+                <li>✓ Spar tid og besvær med DIY-løsninger</li>
+              </ul>
+            </div>
+            <div className="bg-site-gray-100 p-6 rounded-lg">
+              <h3 className="text-lg font-bold mb-3">Find det bedste tilbud på algerens af fliser</h3>
+              <p>
+                Vi anbefaler altid at indhente mindst 3 forskellige tilbud på <strong>algerens af fliser</strong>. Dette giver dig et bedre overblik over prisniveauet og de forskellige metoder, firmaerne anvender.
+              </p>
+              <p className="mt-2">
+                Se vores anbefalede firmaer ovenfor – de er nøje udvalgt baseret på kundeanmeldelser, effektivitet og prisniveau. Husk altid at bede om imprægnering efter rensningen for at forlænge effekten.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
