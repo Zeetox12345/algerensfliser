@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,23 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Custom colors for AlgerensFliser website
+				site: {
+					'green': {
+						100: '#F2FCE2',
+						200: '#E2FFCF',
+						300: '#C5EAA8',
+						400: '#7FB236',
+						500: '#5A8D1D',
+					},
+					'gray': {
+						100: '#F1F0FB',
+						200: '#aaadb0',
+						300: '#6c6f73',
+						400: '#4a4b4f',
+						500: '#333333',
+					}
 				}
 			},
 			borderRadius: {
