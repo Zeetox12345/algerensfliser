@@ -14,7 +14,7 @@ const HeroSection = () => {
         }}
       ></div>
       
-      <div className="container section pt-12 pb-0 lg:pt-20 lg:pb-0">
+      <div className="container section pt-12 pb-0 lg:pt-16 lg:pb-0">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-8">
           {/* Hero content */}
           <div className="z-10">
@@ -79,20 +79,29 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Service cards directly in Hero section */}
-        <div id="services" className="pb-10">
+        {/* Service cards - highlight section */}
+        <div id="services" className="py-10">
           <div className="text-center max-w-3xl mx-auto mb-6">
-            <h2 className="heading-md mb-3">Find professionel algerens af fliser tilbud</h2>
-            <p>
+            <h2 className="heading-md mb-3">Få De Bedste Tilbud På Algerens Af Fliser</h2>
+            <p className="mb-4 text-lg">
               Vi har nøje udvalgt de bedste firmaer til algerens af fliser baseret på kvalitet, 
               kundetilfredshed og pris. Vi anbefaler at indhente minimum 3 tilbud.
             </p>
+            <p className="text-site-gray-300 text-sm mb-6">
+              Alle firmaer er vurderet ud fra over 400 kundeanmeldelser og tilbyder gratis prisoverslag
+            </p>
           </div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
             {services.slice(0, 4).map((service) => (
               <ServiceCard key={service.id} service={service} compactView={true} />
             ))}
+          </div>
+          
+          <div className="mt-6 text-center">
+            <p className="text-sm text-site-gray-300 italic">
+              * Priserne er vejledende og kan variere afhængigt af fliseområdets tilstand og størrelse
+            </p>
           </div>
         </div>
 

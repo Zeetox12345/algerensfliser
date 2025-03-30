@@ -22,6 +22,9 @@ interface ServiceCardProps {
 }
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ service, compactView = false }) => {
+  const highlightColor = service.highlight ? "text-site-green-400" : "text-[#0096ff]";
+  const buttonBgColor = service.highlight ? "bg-site-green-400 hover:bg-site-green-500" : "bg-[#0096ff] hover:bg-[#0080e0]";
+
   return (
     <div 
       className={`rounded-lg overflow-hidden shadow-lg transition-transform hover:transform hover:scale-[1.02] ${
@@ -35,80 +38,80 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service, compactView = false 
           ANBEFALET
         </div>
       )}
-      <div className={`p-${compactView ? '3' : '6'}`}>
-        <div className="flex items-center mb-2">
+      <div className={`p-${compactView ? '4' : '6'}`}>
+        {/* Header with logo and name */}
+        <div className="flex items-center mb-4">
           {service.logo && (
             <img 
               src={service.logo} 
               alt={`${service.name} logo`} 
-              className={`h-${compactView ? '8' : '14'} mr-3 object-contain`}
+              className={`h-${compactView ? '10' : '12'} mr-4 object-contain`}
             />
           )}
           <div>
-            <h3 className={`${compactView ? 'text-base' : 'text-xl'} font-bold`}>{service.name}</h3>
-            <div className="flex items-center">
-              <div className="flex mr-2 scale-90 origin-left">
-                <RatingStars rating={service.rating} />
-              </div>
-              <span className="text-site-gray-300 text-xs">
-                {service.rating} ({service.reviews})
-              </span>
-            </div>
+            <h3 className={`${compactView ? 'text-lg' : 'text-xl'} font-bold`}>{service.name}</h3>
+            <RatingStars 
+              rating={service.rating} 
+              showRatingText={true} 
+              reviews={service.reviews} 
+              size={compactView ? 16 : 18} 
+            />
           </div>
         </div>
         
-        {!compactView && <p className="mb-4">{service.description}</p>}
-        
-        <div className="bg-site-gray-100 p-2 rounded-md mb-3 text-sm">
+        {/* Price box */}
+        <div className="bg-site-gray-100 p-3 rounded-md mb-4">
           <div className="flex justify-between items-center">
             <span className="font-semibold">Pris:</span>
-            <span className="text-site-green-400 font-bold">{service.price}</span>
+            <span className={`${highlightColor} font-bold`}>{service.price}</span>
           </div>
         </div>
 
-        {compactView ? (
-          <div className="mb-3">
-            <ul className="text-xs space-y-1">
-              {service.features.slice(0, 3).map((feature, idx) => (
-                <li key={idx} className="flex items-start">
-                  <span className="text-site-green-400 mr-1 font-bold">✓</span>
-                  <span>{feature}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ) : (
-          <>
-            <h4 className="font-bold mb-3">Inkluderer:</h4>
-            <FeaturesList features={service.features} />
-            
-            <div className="flex items-center justify-between mb-4">
-              <div className="flex items-center text-sm text-site-gray-300">
-                <Clock size={14} className="mr-1" />
-                <span>Svar inden for 24 timer</span>
-              </div>
-              <a 
-                href={service.link} 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="text-site-green-400 hover:underline text-sm flex items-center"
-              >
-                Besøg hjemmeside <ExternalLink size={12} className="ml-1" />
-              </a>
+        {/* Features list */}
+        <div className="mb-4">
+          {compactView ? (
+            <FeaturesList 
+              features={service.features} 
+              compact={true} 
+              highlightColor={highlightColor}
+            />
+          ) : (
+            <>
+              <h4 className="font-bold mb-2">Inkluderer:</h4>
+              <FeaturesList 
+                features={service.features}
+                highlightColor={highlightColor}
+              />
+            </>
+          )}
+        </div>
+        
+        {!compactView && (
+          <div className="flex items-center justify-between mb-4">
+            <div className="flex items-center text-sm text-site-gray-300">
+              <Clock size={14} className="mr-1" />
+              <span>Svar inden for 24 timer</span>
             </div>
-          </>
+            <a 
+              href={service.link} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className={`${highlightColor} hover:underline text-sm flex items-center`}
+            >
+              Besøg hjemmeside <ExternalLink size={12} className="ml-1" />
+            </a>
+          </div>
         )}
 
-        <div className={`grid ${compactView ? 'grid-cols-1' : 'grid-cols-2'} gap-2`}>
+        {/* Call to action buttons */}
+        <div className={`grid ${compactView ? 'grid-cols-1' : 'grid-cols-2'} gap-2 mt-auto`}>
           <a 
             href={service.link} 
             target="_blank" 
             rel="noopener noreferrer"
-            className={`block w-full text-center py-2 px-3 rounded-md font-semibold transition-colors text-sm ${
-              service.highlight 
-                ? 'bg-site-green-400 hover:bg-site-green-500 text-white' 
-                : 'bg-[#0096ff] hover:bg-[#0080e0] text-white'
-            }`}
+            className={`block w-full text-center py-3 px-4 rounded-md font-semibold transition-colors ${
+              buttonBgColor
+            } text-white`}
           >
             {service.cta} →
           </a>
