@@ -12,7 +12,7 @@ const RatingStars: React.FC<RatingStarsProps> = ({ rating }) => {
     stars.push(
       <Star 
         key={i} 
-        size={16} 
+        size={18} 
         className={i < Math.floor(rating) 
           ? "fill-yellow-400 text-yellow-400" 
           : i < rating 

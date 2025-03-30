@@ -6,12 +6,14 @@ import { services } from '../data/servicesData';
 
 const ServiceSection = () => {
   return (
-    <section id="services" className="section">
+    <section id="services" className="section bg-white py-12">
       <div className="container">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="heading-lg mb-4">Professionel Algerens af Fliser</h2>
+          <h2 className="heading-lg mb-4">Find professionel algerens af fliser tilbud</h2>
           <p className="text-lg">
-            Sammenlign de bedste professionelle tjenester til algerens af fliser. Vi har nøje udvalgt de bedste firmaer baseret på kvalitet, pris og kundetilfredshed.
+            Vi har nøje udvalgt de bedste firmaer til algerens af fliser baseret på kvalitet, 
+            kundetilfredshed og pris. Vi anbefaler at indhente minimum 3 tilbud for at sikre 
+            den bedste pris og kvalitet.
           </p>
         </div>
 
