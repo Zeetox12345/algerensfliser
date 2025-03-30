@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import ServiceCard from './service/ServiceCard';
@@ -14,7 +15,7 @@ const HeroSection = () => {
       ></div>
       
       <div className="container section pt-12 pb-0 lg:pt-20 lg:pb-0">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-8">
           {/* Hero content */}
           <div className="z-10">
             <h1 className="heading-xl mb-6 text-site-gray-500">
@@ -79,17 +80,16 @@ const HeroSection = () => {
         </div>
 
         {/* Service cards directly in Hero section */}
-        <div id="services" className="pb-16">
-          <div className="text-center max-w-3xl mx-auto mb-8">
-            <h2 className="heading-md mb-4">Find professionel algerens af fliser tilbud</h2>
-            <p className="text-lg">
+        <div id="services" className="pb-10">
+          <div className="text-center max-w-3xl mx-auto mb-6">
+            <h2 className="heading-md mb-3">Find professionel algerens af fliser tilbud</h2>
+            <p>
               Vi har nøje udvalgt de bedste firmaer til algerens af fliser baseret på kvalitet, 
-              kundetilfredshed og pris. Vi anbefaler at indhente minimum 3 tilbud for at sikre 
-              den bedste pris og kvalitet.
+              kundetilfredshed og pris. Vi anbefaler at indhente minimum 3 tilbud.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {services.slice(0, 4).map((service) => (
               <ServiceCard key={service.id} service={service} compactView={true} />
             ))}
