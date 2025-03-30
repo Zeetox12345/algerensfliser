@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Clock, ExternalLink } from 'lucide-react';
 import RatingStars from './RatingStars';
@@ -38,17 +37,24 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service, compactView = false 
           ANBEFALET
         </div>
       )}
-      <div className={`p-${compactView ? '4' : '6'}`}>
+      <div className={compactView ? "p-4" : "p-6"}>
         {/* Header with logo and name */}
-        <div className="flex items-center mb-4">
+        <div className="flex flex-col items-center mb-4">
           {service.logo && (
-            <img 
-              src={service.logo} 
-              alt={`${service.name} logo`} 
-              className={`h-${compactView ? '10' : '12'} mr-4 object-contain`}
-            />
+            <a 
+              href={service.link} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="cursor-pointer hover:opacity-80 transition-opacity"
+            >
+              <img 
+                src={service.logo} 
+                alt={`${service.name} logo`} 
+                className="h-12 mb-2 object-contain"
+              />
+            </a>
           )}
-          <div>
+          <div className="text-center">
             <h3 className={`${compactView ? 'text-lg' : 'text-xl'} font-bold`}>{service.name}</h3>
             <RatingStars 
               rating={service.rating} 
@@ -61,9 +67,11 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service, compactView = false 
         
         {/* Price box */}
         <div className="bg-site-gray-100 p-3 rounded-md mb-4">
-          <div className="flex justify-between items-center">
+          <div className="flex flex-col">
             <span className="font-semibold">Pris:</span>
-            <span className={`${highlightColor} font-bold`}>{service.price}</span>
+            <span className={`${highlightColor} font-bold text-sm mt-1 whitespace-pre-line`}>
+              {service.price}
+            </span>
           </div>
         </div>
 

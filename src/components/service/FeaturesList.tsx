@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Check } from 'lucide-react';
 
@@ -14,12 +13,12 @@ const FeaturesList: React.FC<FeaturesListProps> = ({
   highlightColor = "text-site-green-400"
 }) => {
   return (
-    <ul className={`mb-4 space-y-${compact ? '2' : '2.5'}`}>
+    <ul className="mb-4 space-y-2">
       {features.map((feature, idx) => (
         <li key={idx} className="flex items-start">
-          <Check className={`${highlightColor} mr-2 shrink-0 ${compact ? 'mt-0.5 w-4 h-4' : 'mt-0.5'}`} 
+          <Check className={`${highlightColor} mr-2 shrink-0 mt-0.5`} 
                 size={compact ? 16 : 18} />
-          <span className={`${compact ? 'text-sm' : 'text-sm'} font-medium`}>{feature}</span>
+          <span className="text-sm font-medium break-words">{feature}</span>
         </li>
       ))}
     </ul>

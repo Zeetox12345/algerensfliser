@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -7,6 +6,12 @@ import DIYSection from '../components/DIYSection';
 import ServiceSection from '../components/ServiceSection';
 import FAQSection from '../components/FAQSection';
 import MethodsSection from '../components/MethodsSection';
+import GallerySection from '../components/GallerySection';
+import EnvironmentalSection from '../components/EnvironmentalSection';
+import TileTypesSection from '../components/TileTypesSection';
+import DIYvsProSection from '../components/DIYvsProSection';
+import SeasonalSection from '../components/SeasonalSection';
+import LocalRulesSection from '../components/LocalRulesSection';
 import { Helmet } from 'react-helmet-async';
 
 const Index = () => {
@@ -15,20 +20,20 @@ const Index = () => {
     window.scrollTo(0, 0);
 
     // Add meta description and title
-    document.title = "AlgerensFliser.dk – Din Guide til Rene Fliser Uden Alger";
+    document.title = "Algerens Fliser 2025 | Din ultimative guide til rene fliser!";
   }, []);
 
   return (
     <>
       <Helmet>
-        <title>AlgerensFliser.dk – Din Guide til Rene Fliser Uden Alger</title>
-        <meta name="description" content="Lær alt om algerens af fliser, DIY-metoder, og find de bedste firmaer. Få smukke, algefri fliser nemt og billigt!" />
+        <title>Algerens Fliser 2025 | Din ultimative guide til rene fliser!</title>
+        <meta name="description" content="Beskyt dine fliser mod alger og skab smukke, holdbare udearealer. Få gratis tilbud på professionel rens, se gør-det-selv tips og sammenlign produkter. Klik her – du vil ikke fortryde det!" />
         <meta name="keywords" content="algerens fliser, rense alger fra fliser, fliserens, algefjerner, fliser uden alger" />
         <link rel="canonical" href="https://algerensfliser.dk/" />
 
         {/* Open Graph tags */}
-        <meta property="og:title" content="AlgerensFliser.dk – Din Guide til Rene Fliser Uden Alger" />
-        <meta property="og:description" content="Lær alt om algerens af fliser, DIY-metoder, og find de bedste firmaer der kan hjælpe dig." />
+        <meta property="og:title" content="Algerens Fliser 2025 | Din ultimative guide til rene fliser!" />
+        <meta property="og:description" content="Beskyt dine fliser mod alger og skab smukke, holdbare udearealer. Få gratis tilbud på professionel rens, se gør-det-selv tips og sammenlign produkter." />
         <meta property="og:url" content="https://algerensfliser.dk/" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://images.unsplash.com/photo-1506744038136-46273834b3fb" />
@@ -43,6 +48,12 @@ const Index = () => {
           <ServiceSection />
           <DIYSection />
           <MethodsSection />
+          <GallerySection />
+          <EnvironmentalSection />
+          <TileTypesSection />
+          <DIYvsProSection />
+          <SeasonalSection />
+          <LocalRulesSection />
           <FAQSection />
         </main>
         

@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -12,10 +11,17 @@ const Header = () => {
 
   return (
     <header className="bg-white shadow-md sticky top-0 z-50">
-      <div className="container py-4 flex justify-between items-center">
+      <div className="container py-3 flex justify-between items-center">
         {/* Logo */}
-        <Link to="/" className="font-raleway text-2xl font-bold text-site-green-400">
-          AlgerensFliser.dk
+        <Link to="/" className="flex items-center">
+          <img 
+            src="/lovable-uploads/favicon_algerensfliser.png" 
+            alt="AlgerensFliser.dk Logo" 
+            className="h-12 w-12 mr-3"
+          />
+          <span className="font-raleway text-2xl font-bold text-site-green-400">
+            AlgerensFliser.dk
+          </span>
         </Link>
 
         {/* Mobile Menu Button */}
@@ -38,9 +44,6 @@ const Header = () => {
           <a href="#services" className="font-semibold hover:text-site-green-400 transition-colors">
             Professionel Hjælp
           </a>
-          <a href="#about" className="font-semibold hover:text-site-green-400 transition-colors">
-            Om Os
-          </a>
           <a href="#services" className="btn-primary">
             Få Tilbud Nu
           </a>
@@ -58,9 +61,6 @@ const Header = () => {
               </a>
               <a href="#services" className="font-semibold hover:text-site-green-400 transition-colors" onClick={() => setIsMenuOpen(false)}>
                 Professionel Hjælp
-              </a>
-              <a href="#about" className="font-semibold hover:text-site-green-400 transition-colors" onClick={() => setIsMenuOpen(false)}>
-                Om Os
               </a>
               <a href="#services" className="btn-primary inline-block text-center" onClick={() => setIsMenuOpen(false)}>
                 Få Tilbud Nu

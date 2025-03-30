@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import ServiceCard from './service/ServiceCard';
@@ -92,7 +91,7 @@ const HeroSection = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
             {services.slice(0, 4).map((service) => (
               <ServiceCard key={service.id} service={service} compactView={true} />
             ))}

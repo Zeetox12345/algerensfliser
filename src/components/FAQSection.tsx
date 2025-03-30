@@ -1,4 +1,3 @@
-
 import React from 'react';
 import {
   Accordion,
@@ -70,18 +69,6 @@ const FAQSection = () => {
               </AccordionItem>
             ))}
           </Accordion>
-        </div>
-
-        <div className="mt-12">
-          <div className="bg-site-green-100 p-6 rounded-lg text-center max-w-3xl mx-auto">
-            <h3 className="heading-md mb-4">Har du stadig spørgsmål?</h3>
-            <p className="mb-6">
-              Vores eksperter er klar til at hjælpe dig med at finde de bedste løsninger til dine fliser. Kontakt os i dag for personlig rådgivning.
-            </p>
-            <a href="#contact" className="btn-primary inline-block">
-              Kontakt Os
-            </a>
-          </div>
         </div>
       </div>
     </section>
