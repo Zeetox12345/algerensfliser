@@ -7,6 +7,7 @@ import ServiceSection from '../components/ServiceSection';
 import FAQSection from '../components/FAQSection';
 import MethodsSection from '../components/MethodsSection';
 import GallerySection from '../components/GallerySection';
+import FliseArealSection from '../components/FliseArealSection';
 import EnvironmentalSection from '../components/EnvironmentalSection';
 import TileTypesSection from '../components/TileTypesSection';
 import DIYvsProSection from '../components/DIYvsProSection';
@@ -49,6 +50,7 @@ const Index = () => {
           <DIYSection />
           <MethodsSection />
           <GallerySection />
+          <FliseArealSection />
           <EnvironmentalSection />
           <TileTypesSection />
           <DIYvsProSection />
