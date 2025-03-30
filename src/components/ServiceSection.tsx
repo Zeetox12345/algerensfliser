@@ -1,26 +1,18 @@
 
 import React from 'react';
-import ServiceCard from './service/ServiceCard';
 import ServiceBenefits from './service/ServiceBenefits';
-import { services } from '../data/servicesData';
 
 const ServiceSection = () => {
   return (
-    <section id="services" className="section bg-white py-12">
+    <section className="section bg-white py-12">
       <div className="container">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="heading-lg mb-4">Find professionel algerens af fliser tilbud</h2>
+          <h2 className="heading-lg mb-4">Fordele ved professionel algerens af fliser</h2>
           <p className="text-lg">
-            Vi har nøje udvalgt de bedste firmaer til algerens af fliser baseret på kvalitet, 
-            kundetilfredshed og pris. Vi anbefaler at indhente minimum 3 tilbud for at sikre 
-            den bedste pris og kvalitet.
+            Professionel algerens af fliser giver ikke kun et flottere resultat, men forlænger også 
+            levetiden på dine fliser markant. Nedenfor kan du se de vigtigste fordele ved at vælge 
+            en professionel service.
           </p>
-        </div>
-
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          {services.map((service) => (
-            <ServiceCard key={service.id} service={service} />
-          ))}
         </div>
 
         <ServiceBenefits />

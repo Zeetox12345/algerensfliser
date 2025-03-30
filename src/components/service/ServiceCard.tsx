@@ -18,9 +18,10 @@ interface ServiceCardProps {
     link: string;
     highlight: boolean;
   };
+  compactView?: boolean;
 }
 
-const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
+const ServiceCard: React.FC<ServiceCardProps> = ({ service, compactView = false }) => {
   return (
     <div 
       className={`rounded-lg overflow-hidden shadow-lg transition-transform hover:transform hover:scale-[1.02] ${
@@ -34,16 +35,16 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
           ANBEFALET
         </div>
       )}
-      <div className="p-6">
+      <div className={`p-${compactView ? '4' : '6'}`}>
         <div className="flex items-center mb-4">
           {service.logo && (
             <img 
               src={service.logo} 
               alt={`${service.name} logo`} 
-              className="h-14 mr-4 object-contain" 
+              className={`h-${compactView ? '10' : '14'} mr-4 object-contain`}
             />
           )}
-          <h3 className="text-xl font-bold">{service.name}</h3>
+          <h3 className={`${compactView ? 'text-lg' : 'text-xl'} font-bold`}>{service.name}</h3>
         </div>
         
         <div className="flex items-center mb-4">
@@ -55,7 +56,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
           </span>
         </div>
         
-        <p className="mb-4">{service.description}</p>
+        {!compactView && <p className="mb-4">{service.description}</p>}
         
         <div className="bg-site-gray-100 p-3 rounded-md mb-4">
           <div className="flex justify-between items-center">
@@ -64,25 +65,29 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
           </div>
         </div>
 
-        <h4 className="font-bold mb-3">Inkluderer:</h4>
-        <FeaturesList features={service.features} />
-        
-        <div className="flex items-center justify-between mb-4">
-          <div className="flex items-center text-sm text-site-gray-300">
-            <Clock size={14} className="mr-1" />
-            <span>Svar inden for 24 timer</span>
-          </div>
-          <a 
-            href={service.link} 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="text-site-green-400 hover:underline text-sm flex items-center"
-          >
-            Besøg hjemmeside <ExternalLink size={12} className="ml-1" />
-          </a>
-        </div>
+        {!compactView && (
+          <>
+            <h4 className="font-bold mb-3">Inkluderer:</h4>
+            <FeaturesList features={service.features} />
+            
+            <div className="flex items-center justify-between mb-4">
+              <div className="flex items-center text-sm text-site-gray-300">
+                <Clock size={14} className="mr-1" />
+                <span>Svar inden for 24 timer</span>
+              </div>
+              <a 
+                href={service.link} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-site-green-400 hover:underline text-sm flex items-center"
+              >
+                Besøg hjemmeside <ExternalLink size={12} className="ml-1" />
+              </a>
+            </div>
+          </>
+        )}
 
-        <div className="grid grid-cols-2 gap-4">
+        <div className={`grid ${compactView ? 'grid-cols-1' : 'grid-cols-2'} gap-4`}>
           <a 
             href={service.link} 
             target="_blank" 
@@ -95,14 +100,16 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
           >
             {service.cta} →
           </a>
-          <a 
-            href={service.link} 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="block w-full text-center py-3 px-4 rounded-md font-semibold border border-gray-300 hover:bg-gray-50 transition-colors"
-          >
-            Læs mere
-          </a>
+          {!compactView && (
+            <a 
+              href={service.link} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block w-full text-center py-3 px-4 rounded-md font-semibold border border-gray-300 hover:bg-gray-50 transition-colors"
+            >
+              Læs mere
+            </a>
+          )}
         </div>
       </div>
     </div>

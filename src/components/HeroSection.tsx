@@ -1,6 +1,7 @@
-
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import ServiceCard from './service/ServiceCard';
+import { services } from '../data/servicesData';
 
 const HeroSection = () => {
   return (
@@ -12,8 +13,8 @@ const HeroSection = () => {
         }}
       ></div>
       
-      <div className="container section py-16 lg:py-24">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="container section pt-12 pb-0 lg:pt-20 lg:pb-0">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           {/* Hero content */}
           <div className="z-10">
             <h1 className="heading-xl mb-6 text-site-gray-500">
@@ -22,7 +23,7 @@ const HeroSection = () => {
             <p className="text-lg mb-8">
               Er dine fliser plaget af grønne alger? Vi hjælper dig med at fjerne algerne effektivt og forebygge, at de kommer tilbage. Få professionel vejledning eller gør det selv med vores guide.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <a href="#services" className="btn-primary flex items-center justify-center">
                 Få Professionel Hjælp <ArrowRight size={18} className="ml-2" />
               </a>
@@ -77,8 +78,26 @@ const HeroSection = () => {
           </div>
         </div>
 
+        {/* Service cards directly in Hero section */}
+        <div id="services" className="pb-16">
+          <div className="text-center max-w-3xl mx-auto mb-8">
+            <h2 className="heading-md mb-4">Find professionel algerens af fliser tilbud</h2>
+            <p className="text-lg">
+              Vi har nøje udvalgt de bedste firmaer til algerens af fliser baseret på kvalitet, 
+              kundetilfredshed og pris. Vi anbefaler at indhente minimum 3 tilbud for at sikre 
+              den bedste pris og kvalitet.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+            {services.slice(0, 4).map((service) => (
+              <ServiceCard key={service.id} service={service} compactView={true} />
+            ))}
+          </div>
+        </div>
+
         {/* New SEO optimized content section */}
-        <div className="mt-16 bg-white p-8 rounded-lg shadow-md">
+        <div className="mt-4 bg-white p-8 rounded-lg shadow-md">
           <h2 className="heading-md mb-4">Hvorfor algerens af fliser er afgørende for din bolig</h2>
           <p className="mb-4">
             Har dine fliser udviklet grimme, glatte og klæbrige algebelægninger? Dette er ikke blot et æstetisk problem. Professionel <strong>algerens af fliser</strong> er afgørende for at bevare dit fliseareal i god stand og forhindre kostbare skader.
