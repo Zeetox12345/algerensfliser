@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="bg-site-gray-500 text-white pt-12 pb-6">
       <div className="container">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mb-12">
           {/* Company Info */}
           <div>
             <h3 className="text-xl font-bold mb-4">AlgerensFliser.dk</h3>
@@ -25,33 +25,7 @@ const Footer = () => {
               <li><a href="#diy" className="hover:text-site-green-300 transition-colors">Sådan gør du</a></li>
               <li><a href="#services" className="hover:text-site-green-300 transition-colors">Professionel Hjælp</a></li>
               <li><a href="#about" className="hover:text-site-green-300 transition-colors">Om Os</a></li>
-              <li><a href="#contact" className="hover:text-site-green-300 transition-colors">Kontakt</a></li>
             </ul>
-          </div>
-
-          {/* Contact */}
-          <div>
-            <h3 className="text-xl font-bold mb-4">Kontakt</h3>
-            <ul className="space-y-2">
-              <li>Email: info@algerensfliser.dk</li>
-              <li>Tlf: +45 12 34 56 78</li>
-            </ul>
-          </div>
-
-          {/* Newsletter */}
-          <div>
-            <h3 className="text-xl font-bold mb-4">Nyhedsbrev</h3>
-            <p className="mb-2">Tilmeld dig vores nyhedsbrev og få tips og tricks til at holde dine fliser rene.</p>
-            <div className="flex">
-              <input 
-                type="email" 
-                placeholder="Din email" 
-                className="px-4 py-2 text-site-gray-500 rounded-l-md w-full" 
-              />
-              <button className="bg-site-green-400 hover:bg-site-green-500 px-4 py-2 rounded-r-md transition-colors">
-                Tilmeld
-              </button>
-            </div>
           </div>
         </div>
 
@@ -65,11 +39,6 @@ const Footer = () => {
           <p className="mb-4">
             <strong>Affiliate Disclosure:</strong> Nogle links her på siden er affiliate-links, hvilket betyder at vi kan modtage kommission, hvis du klikker på dem og foretager et køb. Dette påvirker ikke vores anbefalinger, som er baseret på grundig research og ekspertise.
           </p>
-          <div className="flex flex-wrap gap-4">
-            <Link to="/privacypolicy" className="hover:text-site-green-300 transition-colors">Privatlivspolitik</Link>
-            <Link to="/terms" className="hover:text-site-green-300 transition-colors">Vilkår & Betingelser</Link>
-            <Link to="/cookies" className="hover:text-site-green-300 transition-colors">Cookies</Link>
-          </div>
         </div>
       </div>
     </footer>

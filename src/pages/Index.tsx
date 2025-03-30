@@ -5,7 +5,6 @@ import Footer from '../components/Footer';
 import HeroSection from '../components/HeroSection';
 import DIYSection from '../components/DIYSection';
 import ServiceSection from '../components/ServiceSection';
-import TestimonialsSection from '../components/TestimonialsSection';
 import FAQSection from '../components/FAQSection';
 import MethodsSection from '../components/MethodsSection';
 import { Helmet } from 'react-helmet-async';
@@ -44,7 +43,6 @@ const Index = () => {
           <ServiceSection />
           <DIYSection />
           <MethodsSection />
-          <TestimonialsSection />
           <FAQSection />
         </main>
         

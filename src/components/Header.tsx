@@ -41,9 +41,6 @@ const Header = () => {
           <a href="#about" className="font-semibold hover:text-site-green-400 transition-colors">
             Om Os
           </a>
-          <a href="#contact" className="font-semibold hover:text-site-green-400 transition-colors">
-            Kontakt
-          </a>
           <a href="#services" className="btn-primary">
             Få Tilbud Nu
           </a>
@@ -64,9 +61,6 @@ const Header = () => {
               </a>
               <a href="#about" className="font-semibold hover:text-site-green-400 transition-colors" onClick={() => setIsMenuOpen(false)}>
                 Om Os
-              </a>
-              <a href="#contact" className="font-semibold hover:text-site-green-400 transition-colors" onClick={() => setIsMenuOpen(false)}>
-                Kontakt
               </a>
               <a href="#services" className="btn-primary inline-block text-center" onClick={() => setIsMenuOpen(false)}>
                 Få Tilbud Nu
