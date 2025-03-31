@@ -34,7 +34,7 @@ export const services = [
       "Landsdækkende service"
     ],
     cta: "Få gratis tilbud",
-    link: "https://pin.jydsktagteknik.dk/t/t?a=1675745582&as=1964307871&t=2&tk=1&epi=https%3A%2F%2Fjydsktagteknik.dk%2Ffliserens-jydsk-tagteknik.html%23fliserens-wrapper&url=https://jydsktagteknik.dk/fliserens-jydsk-tagteknik.html#fliserens-wrapper",
+    link: "https://pin.jydsktagteknik.dk/t/t?a=1805008508&as=1964307871&t=2&tk=1",
     highlight: false
   },
   {
