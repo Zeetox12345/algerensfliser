@@ -5,17 +5,17 @@ export const services = [
     logo: "/lovable-uploads/total_algeservice.png",
     rating: 4.9,
     reviews: 142,
-    description: "Specialister i algebekæmpelse på alle typer fliser og belægninger. De tilbyder 100% tilfredshedsgaranti og ansvarlig behandling af dine fliser.",
+    description: "Specialister i algebekæmpelse på alle typer fliser og belægninger. De tilbyder 100% tilfredshedsgaranti og ansvarlig behandling af dine fliser. SPAR 40% på fliserens nu!",
     price: "2750 kr. (op til 35 m²)\n48,40 kr/m² derefter",
     features: [
+      "SPAR 40% lige nu",
+      "20 års garanti med vedligeholdelsesaftale",
       "100% tilfredshedsgaranti",
       "Høj kundetilfredshed",
-      "Ansvarlig behandling",
-      "Professionelt udstyr",
-      "Landsdækkende service"
+      "Professionelt udstyr"
     ],
     cta: "Få gratis tilbud",
-    link: "https://www.totalalgeservice.dk/fliser/fliserens",
+    link: "https://ion.totalalgeservice.dk/t/t?a=1859537971&as=1964307871&t=2&tk=1",
     highlight: true
   },
   {
@@ -34,7 +34,7 @@ export const services = [
       "Landsdækkende service"
     ],
     cta: "Få gratis tilbud",
-    link: "https://jydsktagteknik.dk/fliserens-jydsk-tagteknik.html",
+    link: "https://pin.jydsktagteknik.dk/t/t?a=1675745582&as=1964307871&t=2&tk=1&epi=https%3A%2F%2Fjydsktagteknik.dk%2Ffliserens-jydsk-tagteknik.html%23fliserens-wrapper&url=https://jydsktagteknik.dk/fliserens-jydsk-tagteknik.html#fliserens-wrapper",
     highlight: false
   },
   {
@@ -53,7 +53,7 @@ export const services = [
       "Erfarne fagfolk"
     ],
     cta: "Få gratis tilbud",
-    link: "https://danskfliserens.dk/fliserens/",
+    link: "https://danskfliserens.dk/gratisproeverens-adt/?utm_source=adtraction&utm_medium=partner&utm_campaign=adtraction&at_gd=6F9B47FE429854A62F1994F4045E981E51F8A68B",
     highlight: false
   },
   {
@@ -72,7 +72,7 @@ export const services = [
       "Dækker hele Danmark"
     ],
     cta: "Få gratis tilbud",
-    link: "https://nul-alger.dk/fliserens/",
+    link: "https://nul-alger.dk/fliserens-landingside/?utm_source=adtraction&utm_medium=affiliate&utm_campaign=adtraction&at_gd=5925A8BE85F8157B3874D4564B6D13C30B761CCE",
     highlight: false
   }
 ];

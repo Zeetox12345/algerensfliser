@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Check, Clock, Shield } from 'lucide-react';
 
 const GallerySection = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -33,27 +33,42 @@ const GallerySection = () => {
             Alle billeder viser virkelige resultater fra vores anbefalede top-udbydere.
           </p>
           <div className="flex items-center justify-center mt-6 mb-8">
-            <div className="bg-white p-4 rounded-lg shadow-md max-w-xl flex flex-col md:flex-row items-center">
-              <img 
-                src="/lovable-uploads/total_algeservice.png" 
-                alt="TOTAL algeservice logo" 
-                className="h-16 mb-3 md:mb-0 md:mr-4"
-              />
-              <div className="text-center md:text-left">
-                <p className="font-semibold text-site-gray-500">
-                  Billederne viser arbejde udført af
-                </p>
-                <p className="text-xl font-bold text-site-green-400 mb-2">
-                  TOTAL algeservice
-                </p>
-                <a 
-                  href="https://www.totalalgeservice.dk/fliser/fliserens" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="btn-primary inline-flex items-center text-sm"
-                >
-                  Få et gratis tilbud <ArrowRight size={16} className="ml-1" />
-                </a>
+            <div className="bg-white p-4 rounded-lg shadow-md max-w-xl relative">
+              {/* Discount badge */}
+              <div className="absolute -top-4 -right-4 bg-red-500 text-white font-bold py-2 px-4 rounded-full transform rotate-12 shadow-lg z-10">
+                SPAR 40%
+              </div>
+              
+              <div className="flex flex-col md:flex-row items-center">
+                <img 
+                  src="/lovable-uploads/total_algeservice.png" 
+                  alt="TOTAL algeservice logo" 
+                  className="h-16 mb-3 md:mb-0 md:mr-4"
+                />
+                <div className="text-center md:text-left">
+                  <p className="font-semibold text-site-gray-500">
+                    Billederne viser arbejde udført af
+                  </p>
+                  <p className="text-xl font-bold text-site-green-400 mb-2">
+                    TOTAL algeservice
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-3">
+                    <div className="bg-site-green-100 text-site-green-600 px-2 py-1 rounded-md text-xs flex items-center">
+                      <Shield size={12} className="mr-1" /> 20 års garanti med aftale
+                    </div>
+                    <div className="bg-red-100 text-red-600 px-2 py-1 rounded-md text-xs flex items-center">
+                      <Clock size={12} className="mr-1" /> Tidsbegrænset tilbud
+                    </div>
+                  </div>
+                  <a 
+                    href="https://ion.totalalgeservice.dk/t/t?a=1859537971&as=1964307871&t=2&tk=1" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="btn-primary inline-flex items-center text-sm"
+                  >
+                    Få et gratis tilbud <ArrowRight size={16} className="ml-1" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -97,22 +112,41 @@ const GallerySection = () => {
                 className="max-w-full max-h-[90vh] object-contain"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-75 p-3 text-white text-center">
-                <p>Arbejde udført af TOTAL algeservice - <a href="https://www.totalalgeservice.dk/fliser/fliserens" target="_blank" rel="noopener noreferrer" className="text-site-green-400 hover:underline">Få et gratis tilbud</a></p>
+                <p>Arbejde udført af TOTAL algeservice - <a href="https://ion.totalalgeservice.dk/t/t?a=1859537971&as=1964307871&t=2&tk=1" target="_blank" rel="noopener noreferrer" className="text-site-green-400 hover:underline">Få et gratis tilbud</a></p>
               </div>
             </div>
           </div>
         )}
 
         <div className="mt-16 text-center">
-          <p className="mb-4 text-lg">Vil du også have flotte resultater som disse?</p>
-          <a 
-            href="https://www.totalalgeservice.dk/fliser/fliserens" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="btn-primary inline-flex items-center"
-          >
-            Kontakt TOTAL algeservice i dag <ArrowRight size={18} className="ml-2" />
-          </a>
+          <div className="bg-white p-6 rounded-lg shadow-md max-w-2xl mx-auto mb-8">
+            <div className="inline-block bg-red-500 text-white font-bold py-2 px-4 rounded-md mb-4">
+              SPAR 40% på fliserens
+            </div>
+            <h3 className="text-xl font-bold mb-4">Professionel fliserens med langvarige resultater</h3>
+            <ul className="text-left space-y-2 mb-6">
+              <li className="flex items-start">
+                <Check size={18} className="text-site-green-400 mr-2 mt-1 flex-shrink-0" />
+                <span>Professionel og godkendt fliserens der fjerner selv genstridig snavs</span>
+              </li>
+              <li className="flex items-start">
+                <Check size={18} className="text-site-green-400 mr-2 mt-1 flex-shrink-0" />
+                <span>Effektiv fjernelse af mos, alger og flisepest - helt uden besvær</span>
+              </li>
+              <li className="flex items-start">
+                <Check size={18} className="text-site-green-400 mr-2 mt-1 flex-shrink-0" />
+                <span><strong>20 års garanti</strong> med en vedligeholdelsesaftale</span>
+              </li>
+            </ul>
+            <a 
+              href="https://ion.totalalgeservice.dk/t/t?a=1859537971&as=1964307871&t=2&tk=1" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="btn-primary inline-flex items-center"
+            >
+              Få et gratis tilbud i dag <ArrowRight size={18} className="ml-2" />
+            </a>
+          </div>
         </div>
       </div>
     </section>
