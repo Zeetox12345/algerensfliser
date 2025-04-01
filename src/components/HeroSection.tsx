@@ -7,27 +7,27 @@ const HeroSection = () => {
   return (
     <section className="relative bg-plain-light">
       
-      <div className="container section pt-3 pb-0 lg:pt-8 lg:pb-0">
+      <div className="container section pt-2 pb-0 lg:pt-8 lg:pb-0">
         {/* Service cards - highlight section - MOVED TO TOP */}
-        <div id="services" className="py-1">
-          <div className="text-center max-w-3xl mx-auto mb-2">
-            <h2 className="heading-md mb-1">Få De Bedste Tilbud På Algerens Af Fliser</h2>
-            <p className="mb-1 text-base">
+        <div id="services" className="py-0.5">
+          <div className="text-center max-w-3xl mx-auto mb-1">
+            <h2 className="heading-md mb-0.5">Få De Bedste Tilbud På Algerens Af Fliser</h2>
+            <p className="mb-0.5 text-base">
               Vi har nøje udvalgt de bedste firmaer baseret på kvalitet, 
               kundetilfredshed og pris. Indhent minimum 3 tilbud.
             </p>
-            <p className="text-site-gray-300 text-xs mb-2">
+            <p className="text-site-gray-300 text-xs mb-1">
               Alle firmaer er vurderet ud fra over 400 kundeanmeldelser og tilbyder gratis prisoverslag
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-3">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-2">
             {services.slice(0, 4).map((service) => (
               <ServiceCard key={service.id} service={service} compactView={true} />
             ))}
           </div>
           
-          <div className="mt-2 text-center">
+          <div className="mt-1 text-center">
             <p className="text-xs text-site-gray-300 italic">
               * Priserne er vejledende og kan variere afhængigt af fliseområdets tilstand og størrelse
             </p>
