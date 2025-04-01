@@ -50,18 +50,26 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service, compactView = false 
               <img 
                 src={service.logo} 
                 alt={`${service.name} logo`} 
-                className="h-8 mb-0.5 object-contain"
+                className="h-11 mb-0.5 object-contain"
               />
             </a>
           )}
           <div className="text-center">
             <h3 className={`${compactView ? 'text-base' : 'text-xl'} font-bold`}>{service.name}</h3>
-            <RatingStars 
-              rating={service.rating} 
-              showRatingText={true} 
-              reviews={service.reviews} 
-              size={compactView ? 14 : 18} 
-            />
+            <div className="flex items-center justify-center mt-0.5">
+              <RatingStars 
+                rating={service.rating} 
+                showRatingText={false} 
+                reviews={0} 
+                size={compactView ? 16 : 18} 
+              />
+              <span className={`${highlightColor} ml-1 font-semibold`}>
+                {service.rating.toFixed(1).replace('.', ',')}
+              </span>
+              <span className="text-site-gray-300 text-xs ml-1">
+                ({service.reviews})
+              </span>
+            </div>
           </div>
         </div>
         
@@ -70,7 +78,9 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service, compactView = false 
           <div className="flex flex-col">
             <span className="font-semibold">Pris:</span>
             <span className={`${highlightColor} font-bold text-sm mt-0.5 whitespace-pre-line`}>
-              {service.price}
+              {service.id === 1 
+                ? "2500 kr. (op til 35 m²)\n48,40 kr/m² derefter" 
+                : service.price}
             </span>
           </div>
         </div>
