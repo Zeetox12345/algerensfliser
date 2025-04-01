@@ -37,9 +37,9 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service, compactView = false 
           ANBEFALET
         </div>
       )}
-      <div className={compactView ? "p-4" : "p-6"}>
+      <div className={compactView ? "p-3" : "p-6"}>
         {/* Header with logo and name */}
-        <div className="flex flex-col items-center mb-4">
+        <div className="flex flex-col items-center mb-2">
           {service.logo && (
             <a 
               href={service.link} 
@@ -50,7 +50,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service, compactView = false 
               <img 
                 src={service.logo} 
                 alt={`${service.name} logo`} 
-                className="h-12 mb-2 object-contain"
+                className="h-10 mb-1 object-contain"
               />
             </a>
           )}
@@ -66,7 +66,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service, compactView = false 
         </div>
         
         {/* Price box */}
-        <div className="bg-white p-3 rounded-md mb-4">
+        <div className="bg-white p-2 rounded-md mb-2">
           <div className="flex flex-col">
             <span className="font-semibold">Pris:</span>
             <span className={`${highlightColor} font-bold text-sm mt-1 whitespace-pre-line`}>
@@ -76,7 +76,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service, compactView = false 
         </div>
 
         {/* Features list */}
-        <div className="mb-4">
+        <div className="mb-2">
           {compactView ? (
             <FeaturesList 
               features={service.features} 
@@ -117,7 +117,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service, compactView = false 
             href={service.link} 
             target="_blank" 
             rel="noopener noreferrer"
-            className={`block w-full text-center py-3 px-4 rounded-md font-semibold transition-colors ${
+            className={`block w-full text-center py-2 px-3 rounded-md font-semibold transition-colors ${
               buttonBgColor
             } text-white flex items-center justify-center`}
           >

@@ -14,7 +14,7 @@ export const services = [
       "Høj kundetilfredshed",
       "Professionelt udstyr"
     ],
-    cta: "Få gratis tilbud",
+    cta: "Få Gratis Tilbud",
     link: "https://ion.totalalgeservice.dk/t/t?a=1859537971&as=1964307871&t=2&tk=1",
     highlight: true
   },
@@ -33,7 +33,7 @@ export const services = [
       "Specialudviklet renseudstyr",
       "Landsdækkende service"
     ],
-    cta: "Få gratis tilbud",
+    cta: "Få Gratis Tilbud",
     link: "https://pin.jydsktagteknik.dk/t/t?a=1805008508&as=1964307871&t=2&tk=1",
     highlight: false
   },
@@ -52,7 +52,7 @@ export const services = [
       "Miljøvenlige produkter",
       "Erfarne fagfolk"
     ],
-    cta: "Få gratis tilbud",
+    cta: "Få Gratis Tilbud",
     link: "https://danskfliserens.dk/gratisproeverens-adt/?utm_source=adtraction&utm_medium=partner&utm_campaign=adtraction&at_gd=6F9B47FE429854A62F1994F4045E981E51F8A68B",
     highlight: false
   },
@@ -71,7 +71,7 @@ export const services = [
       "Miljøcertificeret",
       "Dækker hele Danmark"
     ],
-    cta: "Få gratis tilbud",
+    cta: "Få Gratis Tilbud",
     link: "https://nul-alger.dk/fliserens-landingside/?utm_source=adtraction&utm_medium=affiliate&utm_campaign=adtraction&at_gd=5925A8BE85F8157B3874D4564B6D13C30B761CCE",
     highlight: false
   }
