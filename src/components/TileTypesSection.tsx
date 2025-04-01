@@ -145,37 +145,39 @@ const TileTypesSection = () => {
               Forskellige placeringer kræver forskellige tilgange til algerens:
             </p>
             
-            <table className="min-w-full border my-6">
-              <thead>
-                <tr className="bg-gray-100">
-                  <th className="border p-3 text-left">Placering</th>
-                  <th className="border p-3 text-left">Udfordringer</th>
-                  <th className="border p-3 text-left">Anbefalet Algerensmetode</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td className="border p-3">Terrasse</td>
-                  <td className="border p-3">Madspild, bladrester, ofte tæt på hus</td>
-                  <td className="border p-3">Skånsom rensning med mild sæbe, forsigtigt tryk, efterfulgt af imprægnering</td>
-                </tr>
-                <tr>
-                  <td className="border p-3">Indkørsel</td>
-                  <td className="border p-3">Oliepletter, belastning fra biler</td>
-                  <td className="border p-3">Kraftigere algerens med specialmidler til oliefjernelse, højere tryk tilladt</td>
-                </tr>
-                <tr>
-                  <td className="border p-3">Havesti</td>
-                  <td className="border p-3">Ofte i skygge, jordkontakt, planterester</td>
-                  <td className="border p-3">Regelmæssig fejning, periodisk algerens med algecid, fugeforsegling</td>
-                </tr>
-                <tr>
-                  <td className="border p-3">Poolområde</td>
-                  <td className="border p-3">Klorpåvirkning, konstant fugt</td>
-                  <td className="border p-3">Specialrens til poolområder, vandafvisende forsegling efter algerens</td>
-                </tr>
-              </tbody>
-            </table>
+            <div className="overflow-x-auto">
+              <table className="w-full border my-6">
+                <thead>
+                  <tr className="bg-gray-100">
+                    <th className="border p-3 text-left">Placering</th>
+                    <th className="border p-3 text-left">Udfordringer</th>
+                    <th className="border p-3 text-left">Anbefalet Algerensmetode</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="border p-3">Terrasse</td>
+                    <td className="border p-3">Madspild, bladrester, ofte tæt på hus</td>
+                    <td className="border p-3">Skånsom rensning med mild sæbe, forsigtigt tryk, efterfulgt af imprægnering</td>
+                  </tr>
+                  <tr>
+                    <td className="border p-3">Indkørsel</td>
+                    <td className="border p-3">Oliepletter, belastning fra biler</td>
+                    <td className="border p-3">Kraftigere algerens med specialmidler til oliefjernelse, højere tryk tilladt</td>
+                  </tr>
+                  <tr>
+                    <td className="border p-3">Havesti</td>
+                    <td className="border p-3">Ofte i skygge, jordkontakt, planterester</td>
+                    <td className="border p-3">Regelmæssig fejning, periodisk algerens med algecid, fugeforsegling</td>
+                  </tr>
+                  <tr>
+                    <td className="border p-3">Poolområde</td>
+                    <td className="border p-3">Klorpåvirkning, konstant fugt</td>
+                    <td className="border p-3">Specialrens til poolområder, vandafvisende forsegling efter algerens</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
