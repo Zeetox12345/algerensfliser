@@ -1,5 +1,5 @@
 import React from 'react';
-import { Clock, ExternalLink } from 'lucide-react';
+import { Clock, ExternalLink, ArrowRight } from 'lucide-react';
 import RatingStars from './RatingStars';
 import FeaturesList from './FeaturesList';
 
@@ -119,9 +119,9 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service, compactView = false 
             rel="noopener noreferrer"
             className={`block w-full text-center py-3 px-4 rounded-md font-semibold transition-colors ${
               buttonBgColor
-            } text-white`}
+            } text-white flex items-center justify-center`}
           >
-            {service.cta} →
+            {service.cta} <ArrowRight size={20} className="ml-2" />
           </a>
           {!compactView && (
             <a 
