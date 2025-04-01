@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Star, Quote } from 'lucide-react';
 
@@ -48,7 +47,7 @@ const TestimonialsSection = () => {
   };
 
   return (
-    <section className="section bg-site-gray-100">
+    <section className="section bg-white">
       <div className="container">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="heading-lg mb-4">Hvad vores kunder siger</h2>

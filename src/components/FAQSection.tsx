@@ -60,7 +60,7 @@ const FAQSection = () => {
                 value={`item-${index}`}
                 className="border border-gray-200 rounded-lg overflow-hidden"
               >
-                <AccordionTrigger className="px-6 py-4 hover:bg-site-gray-100 hover:no-underline">
+                <AccordionTrigger className="px-6 py-4 hover:bg-gray-50 hover:no-underline">
                   <span className="text-left font-semibold">{faq.question}</span>
                 </AccordionTrigger>
                 <AccordionContent className="px-6 py-4 pt-0">

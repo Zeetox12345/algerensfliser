@@ -26,7 +26,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service, compactView = false 
 
   return (
     <div 
-      className={`rounded-lg overflow-hidden shadow-lg transition-transform hover:transform hover:scale-[1.02] ${
+      className={`rounded-lg overflow-hidden shadow-lg transition-transform hover:transform hover:scale-[1.02] bg-white-card ${
         service.highlight 
           ? 'border-2 border-site-green-400 relative' 
           : 'border border-gray-200'
@@ -66,7 +66,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service, compactView = false 
         </div>
         
         {/* Price box */}
-        <div className="bg-site-gray-100 p-3 rounded-md mb-4">
+        <div className="bg-white p-3 rounded-md mb-4">
           <div className="flex flex-col">
             <span className="font-semibold">Pris:</span>
             <span className={`${highlightColor} font-bold text-sm mt-1 whitespace-pre-line`}>

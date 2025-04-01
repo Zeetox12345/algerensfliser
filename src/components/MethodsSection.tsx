@@ -188,7 +188,7 @@ const MethodsSection = () => {
                 </ul>
               </div>
               
-              <div className="bg-site-green-100 p-6 rounded-lg">
+              <div className="bg-plain-light p-6 rounded-lg">
                 <h4 className="font-bold text-lg mb-2">Hvorfor imprægnering er vigtig efter algerens af fliser</h4>
                 <p>
                   Mange firmaer tilbyder imprægnering af fliserne efter <strong>algerens</strong>. Dette anbefaler vi altid at takke ja til, da det:

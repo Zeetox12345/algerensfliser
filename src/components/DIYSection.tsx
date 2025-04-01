@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { CheckCircle } from 'lucide-react';
 
@@ -46,7 +45,7 @@ const DIYSection = () => {
   ];
 
   return (
-    <section id="diy" className="section bg-site-gray-100">
+    <section id="diy" className="section bg-white">
       <div className="container">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="heading-lg mb-4">DIY Algerens: Sådan Gør Du Selv</h2>
@@ -69,7 +68,7 @@ const DIYSection = () => {
                   <div>
                     <h4 className="text-xl font-bold mb-2">{step.title}</h4>
                     <p className="mb-3">{step.description}</p>
-                    <div className="bg-site-green-100 p-3 rounded-md">
+                    <div className="bg-plain-light p-3 rounded-md">
                       <p className="text-sm font-semibold">TIP: {step.tips}</p>
                     </div>
                   </div>
@@ -105,7 +104,7 @@ const DIYSection = () => {
                 <p className="text-sm mt-1">Moderat</p>
               </div>
 
-              <div className="mt-8 p-4 bg-site-green-100 rounded-lg">
+              <div className="mt-8 p-4 bg-plain-light rounded-lg">
                 <h4 className="font-semibold mb-2">Har du ikke tid eller lyst?</h4>
                 <p className="text-sm mb-4">
                   Overlad arbejdet til professionelle. De har erfaring, udstyr og de rigtige produkter til at fjerne alger effektivt.

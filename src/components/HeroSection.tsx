@@ -5,13 +5,7 @@ import { services } from '../data/servicesData';
 
 const HeroSection = () => {
   return (
-    <section className="relative bg-site-green-100">
-      {/* Background pattern */}
-      <div className="absolute inset-0 bg-opacity-10 pointer-events-none" 
-        style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2397c73f' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-        }}
-      ></div>
+    <section className="relative bg-plain-light">
       
       <div className="container section pt-12 pb-0 lg:pt-16 lg:pb-0">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-8">
@@ -118,7 +112,7 @@ const HeroSection = () => {
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-            <div className="bg-site-green-100 p-6 rounded-lg">
+            <div className="bg-plain-light p-6 rounded-lg">
               <h3 className="text-lg font-bold mb-3">Fordele ved professionel algerens af fliser</h3>
               <ul className="space-y-2">
                 <li>✓ Effektiv fjernelse af selv genstridige alger</li>
@@ -128,7 +122,7 @@ const HeroSection = () => {
                 <li>✓ Spar tid og besvær med DIY-løsninger</li>
               </ul>
             </div>
-            <div className="bg-site-gray-100 p-6 rounded-lg">
+            <div className="bg-white p-6 rounded-lg">
               <h3 className="text-lg font-bold mb-3">Find det bedste tilbud på algerens af fliser</h3>
               <p>
                 Vi anbefaler altid at indhente mindst 3 forskellige tilbud på <strong>algerens af fliser</strong>. Dette giver dig et bedre overblik over prisniveauet og de forskellige metoder, firmaerne anvender.

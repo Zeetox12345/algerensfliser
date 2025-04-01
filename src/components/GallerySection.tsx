@@ -24,7 +24,7 @@ const GallerySection = () => {
   };
 
   return (
-    <section id="gallery" className="section bg-site-green-100 py-16">
+    <section id="gallery" className="section bg-plain-light py-16">
       <div className="container">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="heading-lg mb-4">Før og Efter Algerens</h2>
@@ -53,7 +53,7 @@ const GallerySection = () => {
                     TOTAL algeservice
                   </p>
                   <div className="flex flex-wrap gap-2 mb-3">
-                    <div className="bg-site-green-100 text-site-green-600 px-2 py-1 rounded-md text-xs flex items-center">
+                    <div className="bg-plain-light text-site-green-600 px-2 py-1 rounded-md text-xs flex items-center">
                       <Shield size={12} className="mr-1" /> 20 års garanti med aftale
                     </div>
                     <div className="bg-red-100 text-red-600 px-2 py-1 rounded-md text-xs flex items-center">

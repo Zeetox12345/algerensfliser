@@ -1,10 +1,9 @@
-
 import React from 'react';
 import { Check } from 'lucide-react';
 
 const ServiceBenefits = () => {
   return (
-    <div className="bg-site-green-100 p-6 rounded-lg">
+    <div className="bg-plain-light p-6 rounded-lg">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div>
           <h3 className="heading-md mb-4">Hvorfor vælge en profesionel service?</h3>
