@@ -70,6 +70,22 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service, compactView = false 
                 ({service.reviews})
               </span>
             </div>
+            
+            {/* Mobile-only button - appears below stars */}
+            {compactView && (
+              <div className="md:hidden mt-3 -mx-2">
+                <a 
+                  href={service.link} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className={`block w-full text-center py-3 px-4 rounded-md text-base font-semibold transition-colors ${
+                    buttonBgColor
+                  } text-white flex items-center justify-center`}
+                >
+                  {service.cta} <ArrowRight size={20} className="ml-2" />
+                </a>
+              </div>
+            )}
           </div>
         </div>
         
@@ -121,8 +137,8 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service, compactView = false 
           </div>
         )}
 
-        {/* Call to action buttons */}
-        <div className={`grid ${compactView ? 'grid-cols-1' : 'grid-cols-2'} gap-1 mt-auto`}>
+        {/* Call to action buttons - hidden on mobile if compactView is true */}
+        <div className={`grid ${compactView ? 'md:grid-cols-1 hidden md:block' : 'grid-cols-2'} gap-1 mt-auto`}>
           <a 
             href={service.link} 
             target="_blank" 
